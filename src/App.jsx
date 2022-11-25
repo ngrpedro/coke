@@ -1,8 +1,10 @@
 import NavBar from "./components/layouts/NavBar";
+import Footer from "./components/layouts/Footer";
 import Hero from "./sections/Hero";
 import NoSugar from "./sections/NoSugar";
 import Flavors from "./sections/Flavors";
 import Christmas from "./sections/Christmas";
+import { InstagramLogo, LinkedinLogo } from "phosphor-react";
 
 function App() {
   return (
@@ -13,12 +15,7 @@ function App() {
       <Flavors />
       <Christmas />
 
-      <div
-        style={{
-          height: "10rem",
-          backgroundColor: "#000",
-        }}
-      ></div>
+      <Footer />
     </div>
   );
 }

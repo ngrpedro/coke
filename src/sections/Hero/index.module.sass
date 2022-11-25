@@ -12,6 +12,7 @@
  */
 
 .background
+
     .container
         margin: auto
         max-width: $layout-max-w
@@ -25,15 +26,13 @@
 
         position: relative
 
-        @include md
-            padding: 5rem
-
         &::before
             content: ""
             top: 0
             left: 0
             width: 100%
             height: 100%
+            background-size: 100%
             position: absolute
             z-index: -1
 
@@ -41,14 +40,24 @@
             filter: blur(8px)
 
             @include md
-                background-image: none
+                filter: none
+                background-size: 100%
+                background-repeat: no-repeat
+                clip-path: polygon(65% 0, 100% 0, 100% 100%, 36% 99%)
+
+        @include md
+            padding: 5rem
 
         .textBox
-            max-width: 35rem
+            max-width: 30rem
             display: flex
             flex-direction: column
             gap: 3rem
-            margin: 3rem 0rem
+            margin: 0rem 0rem
+
+            @include md
+                margin: 0rem
+                max-width: 25rem
 
             .texts
                 display: flex
@@ -63,7 +72,7 @@
                     font-size: calc(57px + 1vw)
 
                     @include md
-                        font-size: calc(48px + .45vw)
+                        font-size: calc(48px + 1vw)
 
                 p
                     font-family: $font-kanit
