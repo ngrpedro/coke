@@ -35,15 +35,20 @@
             width: 100%
             height: 100%
             position: absolute
-            background-image: url("../../assets/bg_header.png")
             z-index: -1
+
+            background-image: url("../../assets/bg_header.png")
             filter: blur(8px)
+
+            @include md
+                background-image: none
 
         .textBox
             max-width: 35rem
             display: flex
             flex-direction: column
             gap: 3rem
+            margin: 3rem 0rem
 
             .texts
                 display: flex
