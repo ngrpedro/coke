@@ -32,7 +32,7 @@
             left: 0
             width: 100%
             height: 100%
-            background-size: 100%
+            background-size: 200%
             position: absolute
             z-index: -1
 
@@ -42,9 +42,17 @@
 
             @include md
                 filter: none
-                background-size: 100%
+                background-size: 153%
                 background-repeat: no-repeat
-                clip-path: polygon(65% 0, 100% 0, 100% 100%, 36% 99%)
+                clip-path: polygon(65% 0, 100% 0, 100% 100%, 36% 100%)
+
+            @include lg
+                background-size: 122%
+                background-position: top
+
+            @include xl
+                background-size: 90%
+                background-position: right
 
         @include md
             padding: 5rem
@@ -54,7 +62,7 @@
             display: flex
             flex-direction: column
             gap: 3rem
-            margin: 0rem 0rem
+            margin: 4rem 0rem
 
             @include md
                 margin: 0rem

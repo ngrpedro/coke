@@ -11,13 +11,23 @@ const index = () => {
         <div>
           <img src={logo} alt="" />
         </div>
-
+        <p>
+          <a
+            href="https://www.linkedin.com/in/pedro-nogueira399/"
+            target={"_blank"}
+          >
+            Powered by:: Pedro
+          </a>
+        </p>
         <div className={styles.social_medias}>
-          <a href="">
+          <a href="https://github.com/ngrpedro" target={"_blank"}>
             <GithubLogo size={32} color={"white"} />
           </a>
 
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/pedro-nogueira399/"
+            target={"_blank"}
+          >
             <LinkedinLogo size={32} color={"white"} />
           </a>
         </div>
