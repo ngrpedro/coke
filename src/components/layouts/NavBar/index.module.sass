@@ -1,0 +1,110 @@
+@import '../../../styles/main.sass'
+
+.bg
+    background-color: white
+    position: sticky
+    top: 0
+    z-index: 10000
+
+    .container
+        margin: auto
+        max-width: $layout-max-w
+        padding: $spacing-py-1rem
+
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        position: realtive
+
+        background-color: #ffffff
+
+        img
+            width: 3rem
+
+        ul
+            display: none
+            align-items: center
+            justify-content: center
+            gap: 1rem
+            list-style: none
+
+            @include sm
+                display: flex
+
+            li
+                padding: 8px
+                cursor: pointer
+                transition: all .1s ease 0s
+                &:hover
+                    border-bottom: 2px solid $color-redCoke
+
+        button
+            padding: 10px $spacing-px-2rem
+            border-radius: 2px
+            background-color: $color-redCoke
+            color: white
+            font-size: calc(14px + .45vw)
+
+            transition: all 0.2s ease 0s
+
+            &:hover
+                letter-spacing: 1px
+
+        .hamb
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            width: 48px
+            height: 48px
+
+            @include sm
+                display: none
+
+        .hambMenu
+
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            height: 100vh
+            background: linear-gradient(220deg, #d2d2d2 49%, #f88686 100%)
+
+            padding: 1rem
+
+            transition: all 0.5s ease 0s
+
+            .hambMenu_header
+                margin: auto
+                max-width: $layout-max-w
+
+                display: flex
+                align-items: center
+                justify-content: space-between
+
+                .hambMenu_icon
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: black
+                    cursor: pointer
+                    width: 48px
+                    height: 48px
+
+            .listMenu
+                div
+                    cursor: pointer
+                    display: flex
+                    flex-direction: column
+                    align-items: end
+                    justify-content: center
+                    padding: 1rem
+                    color: black
+
+            .hambMenu_image
+
+                img
+                    width: 22rem
+                    margin: auto
+                    margin-top: 5rem

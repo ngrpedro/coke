@@ -1,0 +1,82 @@
+@import '../../styles/main.sass'
+
+.bg
+    background-color: $color-blackCoke
+    color: white
+
+    .container
+        margin: auto
+        max-width: $layout-max-w
+        padding: 4rem $spacing-px-2rem
+
+        display: flex
+        flex-direction: column
+
+        gap: $spacing-px-2rem
+
+        @include xl
+            flex-direction: row-reverse
+
+        .images
+            display: flex
+            flex-direction: column
+            gap: 1rem
+
+            @include md
+                flex-direction: row
+
+            .bgCherry
+                padding: $spacing-py-1rem
+                background-color: $color-purpleCoke
+                display: flex
+                align-items: center
+                justify-content: center
+
+                margin: auto
+                width: 15rem
+                height: 15rem
+
+                img
+                    width: 6em
+
+            .bgVanilla
+                padding: $spacing-py-1rem
+                background-color: $color-lightCoke
+                display: flex
+                align-items: center
+                justify-content: center
+
+                margin: auto
+                width: 15rem
+                height: 15rem
+
+                img
+                    width: 6em
+
+            .bgCherryVanilla
+                padding: $spacing-py-1rem
+                background-color: $color-purpleCoke
+                display: flex
+                align-items: center
+                justify-content: center
+
+                margin: auto
+                width: 15rem
+                height: 15rem
+
+                img
+                    width: 6em
+
+        .texts
+            text-align: start
+            max-width: 500px
+
+            @include xl
+                margin: auto
+
+            h1
+                font-family: $font-kanit
+                font-weight: 800
+                letter-spacing: .05em
+                line-height: 1.1
+                font-size: calc(36px + 2vw)

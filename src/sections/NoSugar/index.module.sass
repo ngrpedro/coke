@@ -1,0 +1,105 @@
+@import '../../styles/main.sass'
+
+.container
+    margin: auto
+    max-width: $layout-max-w
+    padding: $spacing-py-1rem
+
+    position: relative
+
+    @include md
+        padding: 0 $spacing-py-1rem
+
+    .flex_container
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 3rem
+        flex-direction: column
+        padding: $spacing-px-2rem
+
+        @include md
+            flex-direction: row
+
+        .texts
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: center
+            max-width: 30rem
+            gap: $spacing-py-1rem
+
+            h1
+                font-family: $font-kanit
+                font-weight: 800
+                letter-spacing: -.02em
+                line-height: 1.1
+                font-size: calc(30px + .45vw)
+
+                @include sm
+                    font-size: calc(30px + .45vw)
+
+            p
+                font-family: $font-kanit
+                font-size: calc(14px + .45vw)
+                font-weight: 400
+                letter-spacing: .02em
+                line-height: 1.3
+
+            div
+                button
+                    padding: 10px $spacing-px-2rem
+                    border-radius: 2px
+                    background-color: $color-blackCoke
+                    color: white
+                    font-size: calc(14px + .45vw)
+
+                    transition: all 0.2s ease 0s
+
+                    &:hover
+                        letter-spacing: 1px
+
+            .prize
+                display: none
+                position: absolute
+                bottom: 5rem
+                right: 0
+
+                @include lg
+                    display: block
+
+                span
+                    width: 15rem
+                    margin-left: 5rem
+                    margin-top: -8rem
+                    font-size: calc(18px + .45vw)
+                    font-weight: 600
+                    color: white
+                    display: block
+                    transform: rotate(-10deg)
+
+        .bigbottle
+            display: none
+
+            @include md
+                display: flex
+
+        .combinedbottleprize
+            display: block
+            position: relative
+            width: 325px
+
+            span
+                font-size: calc(18px + .45vw)
+                font-weight: 600
+                color: white
+                transform: rotate(-10deg)
+                width: 15rem
+
+                display: block
+                position: absolute
+                top: 310px
+                left: 3rem
+
+            @include md
+                display: none
